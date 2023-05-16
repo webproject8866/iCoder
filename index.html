@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>iCoder-Heaven For Programmer</title>
+
+  <!-- here we are adding the soccial links for our website -->
+  <!-- here is the link to add social links that i take from w3schools -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- now we are making and add a externel css style file just for our social icons adjustment -->
+  <link rel="stylesheet" href="custom.css">
+  <!-- we add the javascript link first after body -->
+  <!-- remaing work in the below social links section -->
+
+</head>
+<body>
+
+  <!-- here we add the java script link for our social links sector and other working is in line 282 -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  <!-- <h1>Hello, world!</h1> -->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <h1><b class="text-success">i</b>Coder</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Topics
+          </a>
+          <div class="dropdown-menu bg-dark aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-success" href="#">Technology</a>
+            <a class="dropdown-item text-success" href="#">Web Development</a>
+            <div class="dropdown-divider text-success"></div>
+            <a class="dropdown-item text-success" href="#">Write for Us</a>
+            <a class="dropdown-item text-success" href="#">Support Us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contuct Us<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/career.html">Careers<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <div class="mx-2">
+        <!-- here is we past the button tirger as a signin -->
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#loginModal">
+          SignIn
+        </button>
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#signupModal">
+          SignUp
+        </button>
+      </div>
+
+    </div>
+  </nav>
+  <!-- we copy the modal code from boot strap and copy here after nav bar  -->
+
+  <!-- login Button trigger modal  just copy here and where is exapmle put login word there and paste on navbar sign in button place-->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+  Launch demo modal
+ </button> -->
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="abcd@gmail.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+            </div>
+            <!-- <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="submit" class="btn btn-outline-success">Login</button>
+          </form>
+        </div>
+        <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-outline-success">Save changes</button> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+  Launch demo modal
+</button> -->
+
+  <!-- Sign UP Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Sign Up to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="abcd@gmail.com">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Re-Type Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1" placeholder="********">
+            </div>
+            <!-- <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+            <button type="submit" class="btn btn-outline-success">Create Account</button>
+
+          </form>
+
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-success">Save changes</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <!-- you can adjust the size of the slide by this given line select the image and it width and hight then save is in your folder and rename it liek 1jpg 2 jpg for slides
+      <img class="d-block w-100" src="https://source.unsplash.com/1400x300/?coding" alt="First slide"> -->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="3.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- giving the margin to our this container margin y-asix my-4 -->
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Globel Coding Confernce</h3>
+            <div class="mb-1 text-body-secondary">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link ">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <!-- for add the image reomve the svg tag put the img tag but paste the class properties of svg tag -->
+            <img class="bd-placeholder-img" width="200" height="250" src="photo-1534972195531-d756b9bfa9f2.avif"
+              alt="here is the Image">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Learn Web Designing</h3>
+            <div class="mb-1 text-body-secondary">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="photo-1605379399642-870262d3d051.avif"
+              alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-warning">Advance Web</strong>
+            <h3 class="mb-0">Learns from basic to Advance</h3>
+            <div class="mb-1 text-body-secondary">April 15</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link ">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <!-- for add the image reomve the svg tag put the img tag but paste the class properties of svg tag -->
+            <img class="bd-placeholder-img" width="200" height="250" src="adv.jpg" alt="here is the Image">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-info">Leades to Career</strong>
+            <h3 class="mb-0">How to Make with This</h3>
+            <div class="mb-1 text-body-secondary">April 16</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="career.avif" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- here we making the sector of social links -->
+  <div div class="p-2 mb-2 bg-dark text-white text-center">
+    <p class="font-weight-Normal">Also Join & Contact Us</p>
+    <div class="socail-links">
+      <a href="https://instagram.com/muhammadaliraza8866?igshid=ZDdkNTZiNTM="> <ion-icon name="Logo-Instagram"></ion-icon> </a>
+      <a href="https://www.facebook.com/profile.php?id=100013097311046&mibextid=ZbWKwL"> <ion-icon name="Logo-Facebook"></ion-icon> </a>
+      <a href="https://wa.me/923047445732"> <ion-icon name="Logo-whatsapp"></ion-icon></a>
+      <a href="https://www.youtube.com/watch?v=vpAJ0s5S2t0"> <ion-icon name="Logo-youtube"></ion-icon> </a>
+      <a href="https://www.linkedin.com/mwlite/in/muhammad-ali-raza-7a1737229"> <ion-icon name="Logo-linkedin"></ion-icon> </a>
+      <a href="https://www.google.com/"> <ion-icon name="Logo-google"></ion-icon> </a>
+    </div>
+
+  </div>
+
+
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2022-2023 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+
+</html>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,20 @@
+.socail-links a{
+    text-decoration: none;
+    color: #fff;
+}
+.socail-links a{
+    color: #fff;
+    font-size: 26px;
+    padding-left: 20px;
+    padding-top: 10px;
+    transition: 0.3 ease;
+}
+.socail-links ion-icon:hover{
+    color: #08b34f;
+}
+.career p{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
